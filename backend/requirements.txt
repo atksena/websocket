@@ -1,0 +1,12 @@
+Django
+django-environ
+gunicorn
+psycopg2-binary
+django-rest-framework
+djangorestframework
+djangorestframework_simplejwt
+channels
+channels[daphne]
+redis
+Twisted[tls,http2]
+channels_redis

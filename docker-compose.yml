@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+
+  nginx:
+    build: nginx
+    restart: on-failure
+    ports:
+      - "80:80"
+    networks:
+      - analytics_network
+
+  backend:
+    build: backend
+    image: python:3.9
+#    command: python manage.py runserver #  "daphne app.asgi:application -b 0.0.0.0 -p 8000"
+    restart: on-failure
+    volumes:
+      - ./backend:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    networks:
+      - analytics_network
+
+  frontend:
+    build: frontend
+    command:
+      - "yarn"
+      - "serve"
+      - "--port"
+      - "80"
+    volumes:
+      - ./frontend:/code
+    ports:
+      - "8080:8080"
+    networks:
+      - analytics_network
+
+  redis:
+    image: redis:6
+    ports:
+      - "6379:6379"
+    networks:
+      - analytics_network
+
+networks:
+  analytics_network:
+    driver: bridge
+
+

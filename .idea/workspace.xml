@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="acdf8c3c-ff46-4640-b3b3-ae32c1097037" name="Changes" comment="id değişmeden önceki son hali" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+        <option value="Vue Composition API Component" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="73aab396b9bba6268bcfce38c79b5f5201631c7f" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NgTO8chle38s3ILdnSSg7BY8at" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sena/PycharmProjects/websocket&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/sena/PycharmProjects/projectmanagement/frontend/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/pycharm-professional/331/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets" />
+      <recent name="$PROJECT_DIR$/backend/task" />
+      <recent name="$PROJECT_DIR$/frontend/node_modules" />
+      <recent name="$PROJECT_DIR$/frontend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/views" />
+      <recent name="$PROJECT_DIR$/backend/asd" />
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/frontend" />
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.websocket">
+    <configuration name="BlabsInternshipProject: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="../BlabsInternshipProject/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.frontend: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="frontend" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.redis: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="redis" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="websocket" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.websocket" />
+      <item itemvalue="Docker.BlabsInternshipProject: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.frontend: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.redis: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.frontend: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.redis: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.BlabsInternshipProject: Compose Deployment" />
+        <item itemvalue="Docker.BlabsInternshipProject: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="acdf8c3c-ff46-4640-b3b3-ae32c1097037" name="Changes" comment="" />
+      <created>1680084691007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680084691007</updated>
+      <workItem from="1680084692172" duration="10896000" />
+      <workItem from="1680095612693" duration="1495000" />
+      <workItem from="1680106283403" duration="10818000" />
+      <workItem from="1680157297314" duration="7477000" />
+      <workItem from="1680165027327" duration="2399000" />
+      <workItem from="1680167434214" duration="1325000" />
+      <workItem from="1680172154155" duration="958000" />
+      <workItem from="1680173121447" duration="11351000" />
+      <workItem from="1680196598587" duration="14293000" />
+      <workItem from="1680243735429" duration="5597000" />
+      <workItem from="1680249970414" duration="19484000" />
+      <workItem from="1680342062464" duration="1301000" />
+      <workItem from="1680459545959" duration="6534000" />
+      <workItem from="1680466498248" duration="141000" />
+      <workItem from="1680466677104" duration="955000" />
+      <workItem from="1680502593960" duration="7201000" />
+      <workItem from="1680511189746" duration="1099000" />
+      <workItem from="1680512353270" duration="1443000" />
+      <workItem from="1680515746562" duration="350000" />
+      <workItem from="1680516128662" duration="5886000" />
+      <workItem from="1680523525822" duration="6250000" />
+      <workItem from="1680589127420" duration="6980000" />
+      <workItem from="1680597951241" duration="9482000" />
+      <workItem from="1680613679142" duration="1706000" />
+      <workItem from="1680615431525" duration="2648000" />
+      <workItem from="1680631691570" duration="3431000" />
+      <workItem from="1680635178571" duration="4493000" />
+      <workItem from="1680675246188" duration="12335000" />
+      <workItem from="1680690946415" duration="283000" />
+      <workItem from="1680691244100" duration="1596000" />
+      <workItem from="1680692885010" duration="6237000" />
+      <workItem from="1680700265764" duration="3882000" />
+      <workItem from="1680716437218" duration="5523000" />
+      <workItem from="1680762370264" duration="5395000" />
+      <workItem from="1680768946522" duration="6023000" />
+      <workItem from="1680779871859" duration="9448000" />
+      <workItem from="1680789932044" duration="1381000" />
+      <workItem from="1680847552934" duration="8149000" />
+      <workItem from="1680856910963" duration="8653000" />
+      <workItem from="1680868663463" duration="7115000" />
+      <workItem from="1680877424917" duration="7000" />
+      <workItem from="1681030368277" duration="11707000" />
+      <workItem from="1681107402645" duration="21154000" />
+      <workItem from="1681194319768" duration="20887000" />
+      <workItem from="1681280765881" duration="20233000" />
+      <workItem from="1681366100511" duration="15885000" />
+      <workItem from="1681453096827" duration="1176000" />
+      <workItem from="1681455882553" duration="2381000" />
+      <workItem from="1681458275297" duration="15328000" />
+      <workItem from="1682488508804" duration="2950000" />
+      <workItem from="1682493876446" duration="2348000" />
+      <workItem from="1682496237107" duration="12176000" />
+      <workItem from="1682576371961" duration="20244000" />
+      <workItem from="1682662261574" duration="7000" />
+      <workItem from="1682662363213" duration="15000" />
+      <workItem from="1682662455049" duration="60000" />
+      <workItem from="1682662516176" duration="183000" />
+      <workItem from="1682662709034" duration="1634000" />
+      <workItem from="1682665225466" duration="1365000" />
+      <workItem from="1682667164104" duration="442000" />
+      <workItem from="1682667618362" duration="2659000" />
+      <workItem from="1682670563910" duration="8000" />
+      <workItem from="1682670583880" duration="9671000" />
+      <workItem from="1682685890447" duration="9000" />
+      <workItem from="1682685914918" duration="983000" />
+      <workItem from="1682686940054" duration="5123000" />
+      <workItem from="1682693188587" duration="560000" />
+      <workItem from="1682851988571" duration="19844000" />
+      <workItem from="1683008689544" duration="14963000" />
+      <workItem from="1683027218340" duration="3934000" />
+      <workItem from="1683032549448" duration="5052000" />
+      <workItem from="1683094658923" duration="10998000" />
+      <workItem from="1683113343315" duration="10921000" />
+      <workItem from="1683180943050" duration="11059000" />
+      <workItem from="1683200165017" duration="9680000" />
+      <workItem from="1683228317346" duration="4169000" />
+      <workItem from="1683267150600" duration="6082000" />
+      <workItem from="1683274438644" duration="15724000" />
+      <workItem from="1683369681995" duration="4013000" />
+      <workItem from="1683526553426" duration="23437000" />
+      <workItem from="1683612889576" duration="19421000" />
+      <workItem from="1683653789713" duration="3027000" />
+      <workItem from="1683699583491" duration="10161000" />
+      <workItem from="1683714390882" duration="12381000" />
+      <workItem from="1683740568123" duration="7647000" />
+      <workItem from="1683785705241" duration="6731000" />
+      <workItem from="1683801906409" duration="9435000" />
+      <workItem from="1683825985453" duration="3536000" />
+      <workItem from="1683872822381" duration="7146000" />
+      <workItem from="1683969120837" duration="1835000" />
+      <workItem from="1684131027463" duration="5358000" />
+      <workItem from="1684172614656" duration="23000" />
+      <workItem from="1684217663897" duration="1844000" />
+      <workItem from="1684304536108" duration="3632000" />
+      <workItem from="1684390993284" duration="8448000" />
+      <workItem from="1684530235529" duration="216000" />
+      <workItem from="1684847160831" duration="3681000" />
+      <workItem from="1684923607465" duration="8054000" />
+      <workItem from="1685340744647" duration="18400000" />
+      <workItem from="1685428763634" duration="19100000" />
+      <workItem from="1685514019378" duration="12786000" />
+    </task>
+    <task id="LOCAL-00001" summary="Doruk work start.">
+      <created>1680246771184</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680246771184</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Urls.py düzeltildi&#10;+ View class'ları ModelViewSet'e çevrildi.">
+      <created>1680247490557</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680247490557</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Login ve edit işlemleri yapıldı.">
+      <created>1680856929162</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680856929162</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Space.CommitStatus" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Doruk work start." />
+    <MESSAGE value="Urls.py düzeltildi&#10;+ View class'ları ModelViewSet'e çevrildi." />
+    <MESSAGE value="Login ve edit işlemleri yapıldı." />
+    <option name="LAST_COMMIT_MESSAGE" value="Login ve edit işlemleri yapıldı." />
+  </component>
+</project>
