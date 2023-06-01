@@ -4,7 +4,6 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from django.contrib.auth.models import User
 
-
 class ExampleView(APIView):
     permission_classes = (IsAuthenticated,)
 

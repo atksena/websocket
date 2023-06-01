@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acdf8c3c-ff46-4640-b3b3-ae32c1097037" name="Changes" comment="Finish">
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/download.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/chat/consumers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/chat/consumers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/jwt_authentication/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/jwt_authentication/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/jwt_authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/jwt_authentication/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LoginPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/RegisterPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/RegisterPage.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,32 +61,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sena/PycharmProjects/websocket&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/sena/PycharmProjects/projectmanagement/frontend/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/snap/pycharm-professional/331/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/sena/PycharmProjects/BlabsInternshipProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/home/sena/PycharmProjects/projectmanagement/frontend/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
+    "ts.external.directory.path": "/snap/pycharm-professional/331/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/frontend/src/assets" />
+      <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/backend/task" />
       <recent name="$PROJECT_DIR$/frontend/node_modules" />
       <recent name="$PROJECT_DIR$/frontend" />
@@ -286,7 +285,7 @@
       <workItem from="1685340744647" duration="18400000" />
       <workItem from="1685428763634" duration="19100000" />
       <workItem from="1685514019378" duration="14668000" />
-      <workItem from="1685600631948" duration="13441000" />
+      <workItem from="1685600631948" duration="14508000" />
     </task>
     <task id="LOCAL-00001" summary="Doruk work start.">
       <created>1680246771184</created>
@@ -309,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680856929162</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finish">
+      <created>1685628950529</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685628950529</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,6 +359,7 @@
     <MESSAGE value="Doruk work start." />
     <MESSAGE value="Urls.py düzeltildi&#10;+ View class'ları ModelViewSet'e çevrildi." />
     <MESSAGE value="Login ve edit işlemleri yapıldı." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login ve edit işlemleri yapıldı." />
+    <MESSAGE value="Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
   </component>
 </project>
