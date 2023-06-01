@@ -11,7 +11,6 @@ class ExampleView(APIView):
         content = {'message': 'Hello, World!'}
         return Response(content)
 
-
 class RegisterView(APIView):
     permission_classes = (IsAuthenticated,)
 
