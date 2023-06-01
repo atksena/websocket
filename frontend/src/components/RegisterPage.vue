@@ -37,6 +37,7 @@
                 <v-btn rounded color="#2C3A47" dark outlined type="submit">
                   Save
                 </v-btn>
+                <p v-if="error" class="error">{{ error }}</p>
               </v-form>
             </v-card-text>
           </v-col>
@@ -48,7 +49,6 @@
 
 <script>
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
   name: "RegisterPage",
   data() {
     return {
@@ -59,47 +59,61 @@ export default {
     };
   },
   methods: {
-    async register() {
+    register() {
+      // eslint-disable-next-line no-async-promise-executor
+      return new Promise(async (resolve, reject) => {
+        try {
+          if (this.password !== this.confirmPassword) {
+            this.password = "";
+            this.confirmPassword = "";
+            return reject("Passwords do not match");
+          }
+          const response = await fetch("http://localhost/api/register/", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              username: this.username,
+              password: this.password,
+              confirm_password: this.confirmPassword,
+            }),
+          });
+          if (response.status === 400) {
+            this.error = "Registration failed";
+            return reject("Registration failed");
+          } else {
+            const data = await response.json();
+            window.localStorage.setItem("username", this.username);
+            window.localStorage.setItem("access", data.access);
+            resolve();
+          }
+        } catch (error) {
+          console.error(error);
+          reject(error);
+        }
+      });
+    },
+    async registerAndClose() {
       try {
-        if (this.password !== this.confirmPassword) {
-          this.password = "";
-          this.confirmPassword = "";
-          return;
+        await this.register();
+        if (!this.error) {
+          await this.$router.push("/loginPage");
+          location.reload();
         }
-        const response = await fetch("api/register/", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            username: this.username,
-            password: this.password,
-            confirmPassword: this.confirmPassword,
-          }),
-        });
-        if (response.status == 400) {
-          this.username = "";
-          this.password = "";
-          this.confirmPassword = "";
-        } else if (!response.ok) {
-          throw new Error(response.json().toString());
-        } else {
-          const data = await response.json();
-          window.localStorage.setItem("username", this.username);
-          window.localStorage.setItem("access", data.access);
-          this.$emit("success");
-        }
+        console.log("Registration successful");
       } catch (error) {
         console.error(error);
       }
     },
-    async registerAndClose() {
-      await this.register();
-      // if (!this.error) {
-      //   await this.$router.push("/loginPage");
-      //   location.reload();
-      // }
-    },
   },
 };
 </script>
+
+<style scoped>
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+</style>
