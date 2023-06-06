@@ -1,5 +1,4 @@
 import json
-
 from channels.generic.websocket import AsyncWebsocketConsumer
 from asgiref.sync import sync_to_async
 from django.contrib.auth.models import AnonymousUser
@@ -17,7 +16,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
             self.room_group_id,
             self.channel_name
         )
-
         if isinstance(self.scope['user'], AnonymousUser):
             print('User is Anonymous: ', self.scope['user'])
             raise DenyConnection(4001)

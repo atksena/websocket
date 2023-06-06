@@ -42,4 +42,17 @@ const router = new VueRouter({
   routes,
 });
 
+router.beforeEach((to, from, next) => {
+  const access = localStorage.getItem("access");
+  if (to.path !== "/" && (access === null || access === undefined)) {
+    if (to.path !== "/loginPage") {
+      next({ path: "/loginPage" });
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+});
+
 export default router;

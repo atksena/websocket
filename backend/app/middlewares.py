@@ -1,13 +1,11 @@
 import traceback
 from urllib.parse import parse_qs
-
 import jwt
 from channels.db import database_sync_to_async
 from django.contrib.auth.models import AnonymousUser
 from django.http import HttpRequest
 from rest_framework.settings import api_settings
 from rest_framework import exceptions
-
 
 class JWTAuthMiddleware:
     def __init__(self, inner):
