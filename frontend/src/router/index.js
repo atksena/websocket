@@ -11,29 +11,34 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    component: LoginPage,
+    redirect: "/loginPage",
   },
   {
     path: "/loginPage",
     component: LoginPage,
-  },
-  {
-    path: "/chatRoomList",
-    component: ChatRoomList,
-  },
-  {
-    path: "/userList",
-    component: UserList,
+    meta: { requiresAuth: false },
   },
   {
     path: "/registerPage",
     component: RegisterPage,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: "/chatRoomList",
+    component: ChatRoomList,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: "/userList",
+    component: UserList,
+    meta: { requiresAuth: true },
   },
   {
     path: "/chatRoom/:id",
     name: "ChatRoom",
     component: ChatRoom,
     props: true,
+    meta: { requiresAuth: true },
   },
 ];
 
@@ -44,8 +49,8 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   const access = localStorage.getItem("access");
-  if (to.path !== "/" && (access === null || access === undefined)) {
-    if (to.path !== "/loginPage") {
+  if (to.matched.some((record) => record.meta.requiresAuth)) {
+    if (!access) {
       next({ path: "/loginPage" });
     } else {
       next();
