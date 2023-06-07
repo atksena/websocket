@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="acdf8c3c-ff46-4640-b3b3-ae32c1097037" name="Changes" comment="Finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/jwt_authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/jwt_authentication/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/RegisterPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/RegisterPage.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +294,7 @@
       <workItem from="1685945955420" duration="15778000" />
       <workItem from="1686032779464" duration="16489000" />
       <workItem from="1686062404497" duration="184000" />
-      <workItem from="1686119545300" duration="14440000" />
+      <workItem from="1686119545300" duration="15900000" />
     </task>
     <task id="LOCAL-00001" summary="Doruk work start.">
       <created>1680246771184</created>
@@ -362,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686139378290</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finish">
+      <created>1686147212559</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686147212559</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

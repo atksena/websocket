@@ -88,7 +88,6 @@ export default {
           window.localStorage.setItem("access", data.access);
           console.log("Registration successful");
 
-          // Yönlendirme işlemi
           this.$router.push("/loginPage");
         } else if (response.status === 400) {
           const errorData = await response.json();
