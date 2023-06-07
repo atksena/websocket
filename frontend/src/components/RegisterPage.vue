@@ -61,51 +61,44 @@ export default {
     };
   },
   methods: {
-    register() {
-      // eslint-disable-next-line no-async-promise-executor
-      return new Promise(async (resolve, reject) => {
-        try {
-          if (this.password !== this.confirmPassword) {
-            this.password = "";
-            this.confirmPassword = "";
-            return reject("Passwords do not match");
-          }
-          const response = await fetch("http://localhost/api/register/", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              username: this.username,
-              password: this.password,
-              confirm_password: this.confirmPassword,
-            }),
-          });
-          if (response.status === 400) {
-            this.error = "Registration failed";
-            return reject("Registration failed");
-          } else {
-            const data = await response.json();
-            window.localStorage.setItem("username", this.username);
-            window.localStorage.setItem("access", data.access);
-            resolve();
-          }
-        } catch (error) {
-          console.error(error);
-          reject(error);
-        }
-      });
-    },
     async registerAndClose() {
       try {
-        await this.register();
-        if (!this.error) {
-          await this.$router.push("/loginPage");
-          location.reload();
+        if (this.password !== this.confirmPassword) {
+          this.password = "";
+          this.confirmPassword = "";
+          this.error = "Passwords do not match";
+          return;
         }
-        console.log("Registration successful");
+
+        const response = await fetch("http://localhost/api/register/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username: this.username,
+            password: this.password,
+            confirmPassword: this.confirmPassword,
+          }),
+        });
+
+        if (response.status === 201) {
+          const data = await response.json();
+          window.localStorage.setItem("username", this.username);
+          window.localStorage.setItem("access", data.access);
+          console.log("Registration successful");
+
+          // Yönlendirme işlemi
+          this.$router.push("/loginPage");
+        } else if (response.status === 400) {
+          const errorData = await response.json();
+          this.error = errorData.error;
+          console.log("Registration failed:", this.error);
+        } else {
+          console.log("Unexpected error occurred during registration.");
+        }
       } catch (error) {
-        console.error(error);
+        console.error("An error occurred during registration:", error);
       }
     },
   },
