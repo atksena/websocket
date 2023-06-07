@@ -10,21 +10,21 @@
             <v-btn color="white" icon size="large" @click="openAddChatRoom">
               <v-icon dark>mdi-plus</v-icon>
             </v-btn>
-            <!--            <v-menu offset-y>-->
-            <!--              <template v-slot:activator="{ on }">-->
-            <!--                <v-btn color="white" icon size="large" v-on="on">-->
-            <!--                  <v-icon dark>mdi-account</v-icon>-->
-            <!--                </v-btn>-->
-            <!--              </template>-->
-            <!--              <v-list>-->
-            <!--                <v-list-item>-->
-            <!--                  <v-list-item-icon>-->
-            <!--                    <v-icon>mdi-logout</v-icon>-->
-            <!--                  </v-list-item-icon>-->
-            <!--                  <v-list-item-title>Logout</v-list-item-title>-->
-            <!--                </v-list-item>-->
-            <!--              </v-list>-->
-            <!--            </v-menu>-->
+            <v-menu offset-y>
+              <template v-slot:activator="{ on }">
+                <v-btn color="white" icon size="large" v-on="on">
+                  <v-icon dark>mdi-account</v-icon>
+                </v-btn>
+              </template>
+              <v-list>
+                <v-list-item @click="logout">
+                  <v-list-item-icon>
+                    <v-icon>mdi-logout</v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-title>Logout</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
             <span>{{ username }}</span>
           </v-flex>
         </v-layout>
@@ -127,11 +127,27 @@ export default {
     refreshRooms(room) {
       this.rooms.push(room);
     },
-    // logout() {
-    //   window.localStorage.removeItem("access");
-    //   window.localStorage.removeItem("username");
-    //   window.location.href = "/loginPage";
-    // },
+    logout() {
+      const token = localStorage.getItem("access");
+      fetch("api/logout/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer " + token,
+        },
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          localStorage.removeItem("access");
+          localStorage.removeItem("username");
+          this.$router.push("/loginPage");
+        })
+        .catch((error) => {
+          console.error("There was a problem with the fetch operation:", error);
+        });
+    },
   },
   created() {
     this.getRooms();

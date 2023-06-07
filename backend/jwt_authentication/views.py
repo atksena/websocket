@@ -3,6 +3,8 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth.models import User
+from rest_framework.authtoken.models import Token
+
 
 class ExampleView(APIView):
     permission_classes = (IsAuthenticated,)
@@ -10,6 +12,7 @@ class ExampleView(APIView):
     def post(self, request):
         content = {'message': 'Hello, World!'}
         return Response(content)
+
 
 class RegisterView(APIView):
     permission_classes = (IsAuthenticated,)
@@ -32,3 +35,10 @@ class RegisterView(APIView):
         user.save()
 
         return Response({'success': 'User created successfully'}, status=status.HTTP_201_CREATED)
+
+
+class LogoutView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def post(self, request):
+        return Response({'success': 'User logged out successfully'})
